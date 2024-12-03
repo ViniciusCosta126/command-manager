@@ -1,13 +1,12 @@
 # Command Manager
 
-## 1 - Objetivo
+## Objetivo
 
-O objeto do projeto é criar um gerenciador de comandas para um restaurante/café. A ideia vai ser fazer algo simples de inicio e funcional e depois ir aprofundando conforme o projeto for andando.
+Criar um gerenciador de comandas para restaurantes e cafés. O objetivo inicial é desenvolver uma aplicação simples e funcional, que poderá ser aprimorada e expandida ao longo do tempo.
 
-## 2 - Desenvolvimento
+## Desenvolvimento
 
-O projeto vai ser criado nas seguintes stacks:
+O projeto será desenvolvido utilizando as seguintes tecnologias:
 
--   Laravel/PHP
--   Tailwind
--   Html/CSS/JS
+-   **Backend:** Laravel/PHP
+-   **Frontend:** Tailwind CSS, HTML, CSS, e JavaScript
