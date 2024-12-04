@@ -21,7 +21,7 @@
 <body class="container-grid">
 
     <x-sidebar></x-sidebar>
-    <div class="content h-screen bg-gray-light">
+    <div class="content h-screen">
         @yield('content')
     </div>
 </body>

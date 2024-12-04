@@ -15,7 +15,7 @@
                 <i class="fa-solid fa-cart-shopping me-2"></i>
                 Produtos
             </a>
-            <a href="" class="p-3 hover:bg-secondary rounded ease-in duration-150">
+            <a href="{{ route('categories.index') }}" class="p-3 hover:bg-secondary rounded ease-in duration-150">
                 <i class="fa-solid fa-layer-group me-2"></i>
                 Categorias
             </a>
