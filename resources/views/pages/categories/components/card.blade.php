@@ -1,4 +1,5 @@
 @props(['categorie'])
+
 <div class="max-w-sm  my-4 flex flex-col  justify-between shadow-md">
     <div class="bg-white rounded-lg p-4 flex flex-col  justify-between h-full">
         <div>
@@ -7,14 +8,31 @@
         </div>
 
         <div class="flex justify-start mt-4">
-            <button
+            <button onclick="openModalEdit({{ $categorie->id }})"
                 class="bg-warning ease-in-out duration-150 text-white px-4 py-2 rounded hover:bg-warning-light focus:outline-none focus:ring-2 focus:ring-blue-300">
                 Editar
             </button>
-            <button
-                class="bg-red-500 ease-in-out duration-150 text-white px-4 py-2 rounded ml-2 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300">
-                Excluir
-            </button>
+            <form method="POST" action="{{ route('categories.deleteCategorie', $categorie->id) }}">
+                @csrf
+                @method('delete')
+                <button type="submit"
+                    class="bg-red-500 ease-in-out duration-150 text-white px-4 py-2 rounded ml-2 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300">
+                    Excluir
+                </button>
+            </form>
+
         </div>
     </div>
 </div>
+
+@include('pages.categories.components.modal-edit', ['categorie' => $categorie])
+
+<script>
+    function openModalEdit(id) {
+        document.getElementById(`editCategorie${id}`).classList.remove("hidden");
+    }
+
+    function closeModalEdit(id) {
+        document.getElementById(`editCategorie${id}`).classList.add("hidden");
+    }
+</script>
