@@ -18,9 +18,12 @@ export default {
                 primary: "#011766",
                 secondary: "#007edd",
                 dark: "#0e0e10",
-                danger: "#D33F49",
+                danger: "#DB2B39 ",
                 success: "#04A777",
-                warning: "#F7F06D",
+                warning: {
+                    light: "#FFC247",
+                    DEFAULT: "#FFB41F",
+                },
                 gray: {
                     light: "#e2e2e2",
                     DEFAULT: "#a5a5a5",
