@@ -3,7 +3,7 @@
 
     <nav class="mt-4">
         <div class="px-4 flex flex-col">
-            <a href="" class="p-3 hover:bg-secondary rounded ease-in duration-150">
+            <a href="/" class="p-3 hover:bg-secondary rounded ease-in duration-150">
                 <i class="fa-regular fa-credit-card me-2"></i>
                 Comandas
             </a>
